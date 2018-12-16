@@ -6,38 +6,52 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Text+Me+One">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/style.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Text+Me+One">
   </head>
   <body>
     <header>
       <h1>
         <b>ISQA Project</b> - Personal Library
       </h1>
+      <nav id="navbar">
+      <ul>
+        <li class="nav"><a href="#userstories">About</a></li>
+        <li class="nav"><a href="#sampleposting">Example Tests</a></li>
+        <li class="nav"><a href="https://github.com/willjw3/Personal-Library" target="_blank">API Documentation</a></li>
+        <li class="nav"><a href="https://www.freecodecamp.org/willjw3" id="profile-link" target="_blank">freeCodeCamp Profile</a></li>
+      </ul>
+      </nav>
     </header>
     <br>
-    <div id="userstories">
-      <h2>User stories:</h2>
-      <ol>
-        <li>Nothing from my website will be cached in my client as a security measure.</li>
-        <li>I will see that the site is powered by 'PHP 4.2.0' even though it isn't as a security measure.</li>
-        <li>I can <b>post</b> a <code>title</code> to /api/books to add a book and returned will be the object with the <code>title</code> and a unique <code>_id</code>.</li>
-        <li>I can <b>get</b> /api/books to retrieve an aray of all books containing <code>title</code>, <code>_id</code>, & <code>commentcount</code>.</li>
-        <li>I can <b>get</b> /api/books/{_id} to retrieve a single object of a book containing <code>title</code>, <code>_id</code>, & an array of <code>comments</code> (empty array if no comments present).</li>
-        <li>I can <b>post</b> a <code>comment</code> to /api/books/{_id} to add a comment to a book and returned will be the books object similar to <b>get</b> /api/books/{_id}.</li>
-        <li>I can <b>delete</b> /api/books/{_id} to delete a book from the collection. Returned will be 'delete successful' if successful.</li>
-        <li>If I try to request a book that doesn't exist I will get a 'no book exists' message.</li>
-        <li>I can send a <b>delete</b> request to /api/books to delete all books in the database. Returned will be 'complete delete successful' if successful.</li>
-        <li>All 6 functional tests required are complete and passing.</li>
-      </ol>
-      <br>
-      <img src='https://cdn.gomix.com/d7932c52-287f-4dae-b175-631fef453000%2FScreen%20Shot%202016-12-16%20at%201.35.56%20AM.png' />
+    <div class="body-center">
+      <div id="userstories">
+        <h2>Features</h2>
+        <ol>
+          <li>Nothing from user's website will be cached in their client as a security measure.</li>
+          <li>User will see that the site is powered by 'PHP 4.2.0' (<i>even though it isn't</i>) as a security measure.</li>
+          <li>User can <b>POST</b> a <code>title</code> to /api/books to add a book.</li>
+          <li>User can <b>GET</b> /api/books to retrieve a list of all books.</li>
+          <li>User can <b>GET</b> /api/books/{_id} to retrieve a single book.</li>
+          <li>User can <b>POST</b> a <code>comment</code> to /api/books/{_id} to add a comment to a book.</li>
+          <li>User can <b>DELETE</b> a book from the collection.</li>
+          <li>If user tries to request a book that doesn't exist they will get a 'no book exists' message.</li>
+          <li>User can send a <b>DELETE</b> request to /api/books to delete all books in the database.</li>
+          <li>All functional tests are complete and passing.</li>
+        </ol>
+        <br>
+        <img src='https://cdn.gomix.com/d7932c52-287f-4dae-b175-631fef453000%2FScreen%20Shot%202016-12-16%20at%201.35.56%20AM.png' />
+      </div>
+      <div class="right-bar">
+        <img src="https://dl.dropboxusercontent.com/s/9pzbk7kie5z549r/fccLogo.jpg?dl=0" alt="">
+        <p>This is a freeCodeCamp Information Security and Quality Assurance project</p>
+        <p>Structure provided by <a href="https://www.freecodecamp.org/">fCC</a>. Functionality by <a href="https://github.com/willjw3">willjw3</a></p>
+      </div>
     </div>
+
     <hr style='margin: 50px'>
     <div class="bottom-box">
-
     <div id ='sampleposting'>
       <h2 style="text-align: left">Test API responses:</h2>
       <form action="/api/books" method="post" class="border">

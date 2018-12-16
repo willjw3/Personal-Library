@@ -12,10 +12,43 @@ body {
   margin: 10px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
 h1 {
   font-family: 'Text Me One';
   color: #49fb35;
   text-shadow: 2px 2px 7px;
+}
+
+.nav {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  color: lightblue;
+}
+
+.body-center {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right-bar {
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+  height: 190px;
+  margin-top: 40px;
+  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 hr {
@@ -36,7 +69,7 @@ hr {
 }
 
 #userstories {
-  margin-left: 5%;
+  margin-right: 200px;
 }
 
 form {
